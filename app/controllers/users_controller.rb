@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
 
+  skip_before_action :authorized, only: :create
+
   # POST /users
   def create
     @user = User.create!(user_params)
@@ -10,7 +12,7 @@ class UsersController < ApplicationController
   # GET /me
   def show
     @user = User.find(session[:user_id])
-    render json: @user, includes: :user_habits
+    render json: @user
   end
 
   private
