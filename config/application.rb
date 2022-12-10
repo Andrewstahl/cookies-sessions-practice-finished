@@ -33,5 +33,12 @@ module CookiesSessionsPractice
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Added so we can access Cookies and Sessions
+    config.api_only = true
+    config.middleware.use ActionDispatch::Cookies
+    config.middleware.use ActionDispatch::Sessions::Cookies
+
+    config.action_dispatch.cookies_same_site_protection = :strict
   end
 end
