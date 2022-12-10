@@ -5,7 +5,7 @@
 ## Overview
 This is the finished code repository for my blog post on getting started with cookies and sessions.
 
-[Follow along with my blog post on cookies/sessions]() to walk through all of the steps of the Rails back end build-out.
+[Follow along with my blog post on cookies/sessions](https://andrewstahlsoftware.medium.com/getting-started-with-cookies-session-management-ruby-on-rails-project-7878d8995cce) to walk through all of the steps of the Rails back end build-out.
 
 This gif provides a basic walkthrough of the finished product.
 ![](https://github.com/Andrewstahl/cookies-sessions-practice-finished/blob/main/media/Login%20Page%20Walkthrough.gif)
