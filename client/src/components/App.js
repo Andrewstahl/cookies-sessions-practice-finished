@@ -9,7 +9,6 @@ export default function App() {
   // request to the "/me" URL, which should show
   useEffect(() => {
     fetch("/me").then((r) => {
-      console.log(r)
       if (r.ok) {
         r.json().then(user => setUser(user))
       }
